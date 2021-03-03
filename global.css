@@ -79,7 +79,7 @@ body, button, a {
     justify-content: space-between;   
     text-align: center;
     align-items: baseline;
-    padding: 5% 5% 0 5%;
+    padding: 2% 5% 0 5%;
     flex: 0 0 auto;
 
 }
@@ -192,4 +192,13 @@ table, th,td{
     .sidenav{
         flex: 15%;
     }
+}
+
+@media screen and (max-height:900px){
+.table{
+    height: 550px;
+}
+.table-elem{
+    height: 530px;
+}
 }
