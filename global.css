@@ -1,0 +1,195 @@
+:root {
+    --background: #f2f3f5;
+    --white:#fff;
+    --text:#000;
+    --dark-blue:#023E7D;
+    --hover-blue:#0353A4;
+    --active-blue:#0b5cad;
+    --light-blue:#CED4E3;
+    --light-grey:#F5F5F5;
+    --grey:#656565;
+}
+
+body{
+    background: var(--background);
+    color: var(--text);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body, button, a {
+    font: 500 1rem "Rajdhani", sans-serif;
+}
+
+
+.sidenav {
+    flex: 15%;
+    z-index: 1;
+    background: var(--dark-blue);
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 200%;
+    color: #f1f1f1;
+    display: block;
+}
+  
+
+.sidenav a:hover {
+    background-color: var(--hover-blue);
+    color: var(--white);
+} 
+
+.main{
+    width:100%;
+    height: 100%;
+    color:var(--text);
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main-text{
+    font-size: 300%;
+
+}
+
+.main-tables{
+    display: flex;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.text-elem{
+    display: flex;
+    justify-content: space-between;   
+    text-align: center;
+    align-items: baseline;
+    padding: 5% 5% 0 5%;
+    flex: 0 0 auto;
+
+}
+
+.table-box{
+    padding: 0 5% 0 5%;
+    flex: 60%;
+    flex: 1 1 auto;
+
+}
+
+.table-elem::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    background-color: #F5F5F5;
+}
+
+.table-elem::-webkit-scrollbar{
+    width: 2px;
+    background-color: #F5F5F5;
+}
+
+.table-elem::-webkit-scrollbar-thumb{
+    background-color: var(--dark-blue);
+}
+
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 700px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+table, th,td{
+    border: 1px solid black;
+}
+.table th, .table td{
+    padding: 6px;
+    font-size: 150%;
+}
+.table-elem{
+    display:block;
+    overflow:auto;
+    height:680px;
+    width:100%;
+
+    background: var(--light-blue);
+}
+.table thead tr, .table-elem tr{
+    display:flex;
+    flex-direction: row;
+}
+.table thead tr th, .table-elem td{
+    flex: 50%;
+}
+
+.table thead{
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+.search-bar{
+    border: 0;
+    border-radius: 50px;
+    font-size: 125%;
+    padding: 6px 6px 6px 10px;
+    font-family: 'Rajdhani';
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color:var(--grey);
+    opacity: 0.7;
+    font-family: 'Rajdhani';
+    font-weight: 500;
+}
+
+.title-text{
+    font-size: 250%;
+}
+.m20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn.active{
+    background: var(--active-blue) ;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidenav {
+        padding-top: 15px;
+        flex: 20%;
+    }  
+    .sidenav a{
+        font-size: 150%;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .sidenav a{
+        padding-left: 10px;
+    }
+    body{
+        flex-direction: column;
+    }
+    .sidenav{
+        flex: 15%;
+    }
+}

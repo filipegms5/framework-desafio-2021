@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="index.js"></script>
+    
+    <link type="text/css" rel="stylesheet" media="all" href="global.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    
+    <title>Framework Table Viewer</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#" id="postBtn" class="btn">POSTS</a>
+        <a href="#" id="toDoBtn" class="btn">TO DO</a>
+        <a href="#" id="albumsBtn" class="btn">ALBUMS</a>
+    </div>
+    <div class="main" id="main">
+        
+        <div id="mainTables" class="main-tables" style="display: none;">
+            <div class="text-elem">
+                <p class="title-text m20" id="titleText">POSTS</p>
+                <input type="text" class="search-bar m20" id="searchBar" placeholder="Pesquisar título...">
+            </div>
+            <div class="table-box">
+                <table class="table" id="tbl">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITLE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-elem" id="tblElem">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+         <div class="main-title" id="mainTitle">
+            <span class="main-text">
+                Escolha uma tabela no menu lateral
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
