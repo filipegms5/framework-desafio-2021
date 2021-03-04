@@ -45,6 +45,7 @@ async function getApi(api){
 }
 
 function removeClasses(){
+    document.getElementById('searchBar').value = '';
     postBtn.classList.remove('active');
     toDoBtn.classList.remove('active');
     albumsBtn.classList.remove('active');
